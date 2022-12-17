@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<style>
+    /*
+    #= id
+    . = class
+    : = pseudo-class
+    ::= pseudo-element
+    > = children
+    */
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    a {
+        color:red;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    a:visited {
+        color:darkred;
+    }
+    a:hover {
+        color:black;
+        text-decoration: overline;
+        
+    }
+    a:active {
+        color: yellow;
+    }
+    a:before{
+        content:'  ψ	';
+        color: darkgray
+
+    }
+
+     a:after {
+        /*content: '  zelda';
+        text-decoration: none;
+        font-weight: normal;
+        color:darkgray;
+        */
+        content:'     ψ	' ;
+        color: darkgray;
+    }
+    .especial{
+        background-color: rgb(207, 158, 158);
+    }
+
+
+</style>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" class="especial">Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">Site Youtube</a></li>
+        <li><a href="https://twitter.com/AndreJanonesAdv">Twitter AJ</a></li>
+
+    </ul>
+    
+</body>
+</html>
