@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <p>
+        <label for="iest">Estado:</label>
+        <select name="estado" id="iest">
+            <option value="" selected>---Escolha---</option>
+            <optgroup label="Região Sudeste">
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="es">Espirito Santo</option>
+            </optgroup>
+
+            <optgroup label="Região Norte">
+                <option value="Am">Amazonas</option>
+                <option value="ap">Amapá</option>
+                <option value="to">Tocantins</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+                <option value="ce">Ceará</option>
+                <option value="pe">Pernambuco</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="Se">Sergipe</option>
+            </optgroup>
+
+            <optgroup label="Região Centro-Oeste">
+                <option value="go">Goiás</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="ms">Mato Grosso do Sul</option>
+            </optgroup>
+
+        </select>
+    </p>
+
+    <p>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="prof" id="iprof" list="lsprof">
+        
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+        <datalist id="lsprof">
+            <option value="ADM">Administração</option>
+            <option value="CONT">Contabilista</option>
+            <option value="DEV">Desenvolvedor</option>
+            <option value="PROF">Professor</option>
+        </datalist>
+
+        <p><label for="imsg">Mensagem:</label></p>
+        <textarea name="msd" id="imsg" cols="30" rows="10"></textarea>
+    </p>
+</body>
+</html>
