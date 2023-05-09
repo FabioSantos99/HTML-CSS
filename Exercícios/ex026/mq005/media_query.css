@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+
+
+@media screen and (max-width: 1200px) {
+   span#burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+
+}
